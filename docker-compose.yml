@@ -9,12 +9,5 @@ services:
       POSTGRES_PASSWORD: postgres
     ports:
       - '5432:5432'
-  api:
-    image: api
-    restart: always
-    ports:
-      - '8080:8080'
-    depends_on:
-      - 'db'
 volumes:
   postgres:

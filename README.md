@@ -5,11 +5,12 @@ An opinionated Vue.js full-stack and typesafe starter-kit that consists of:
 - [Nuxt](https://nuxt.com)
 - [Nuxt Icon](https://github.com/nuxt-modules/icon)
 - [Nuxt Image](https://github.com/nuxt/image)
+- [Nuxt Color Mode](https://color-mode.nuxtjs.org)
 - [Nuxt Security](https://nuxt-security.vercel.app)
 - [Pinia](https://pinia.esm.dev)
 - [VueUse](https://vueuse.org)
-- [Zod](https://zod.dev)
 - [Prisma](https://prisma.io)
+- [Zod](https://zod.dev)
 - [Unocss](https://uno.antfu.me)
 - [Headless UI](https://headlessui.com)
 
@@ -35,6 +36,12 @@ Start the development server on http://localhost:3000
 
 ```bash
 pnpm dev
+```
+
+### Database (PostgreSQL)
+
+```bash
+docker-compose up -d
 ```
 
 ## Production

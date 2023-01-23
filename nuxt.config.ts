@@ -3,7 +3,15 @@ import { defineNuxtConfig } from 'nuxt/config'
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   // ssr: false,
-  modules: ['nuxt-security', '@vueuse/nuxt', '@pinia/nuxt', '@nuxt/image-edge', 'nuxt-icon', '@unocss/nuxt'],
+  modules: [
+    'nuxt-security',
+    '@vueuse/nuxt',
+    '@pinia/nuxt',
+    '@nuxt/image-edge',
+    'nuxt-icon',
+    '@nuxtjs/color-mode',
+    '@unocss/nuxt',
+  ],
   typescript: {
     strict: true,
     shim: false, // Disable generating shim when "Volar: Take Over Mode" is enabled
@@ -12,7 +20,7 @@ export default defineNuxtConfig({
     reactivityTransform: true, // https://vuejs.org/guide/extras/reactivity-transform.html#refs-vs-reactive-variables
   },
   imports: {
-    dirs: ['stores'],
+    dirs: ['stores'], // Auto import Pinia stores
   },
   pinia: {
     autoImports: ['defineStore', 'acceptHMRUpdate'],
